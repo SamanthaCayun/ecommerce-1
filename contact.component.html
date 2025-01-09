@@ -1,0 +1,15 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <label for="name">Nombre</label>
+  <input id="name" formControlName="name" required />
+  <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Nombre es obligatorio</div>
+
+  <label for="email">Correo Electrónico</label>
+  <input id="email" type="email" formControlName="email" required />
+  <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">Correo electrónico inválido</div>
+
+  <label for="message">Mensaje</label>
+  <textarea id="message" formControlName="message" required></textarea>
+  <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">Mensaje es obligatorio y debe tener al menos 10 caracteres</div>
+
+  <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+</form>
