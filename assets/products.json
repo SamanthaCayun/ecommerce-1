@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Computadora",
+    "description": "Computadora de alto rendimiento con procesador Intel i7, 16GB RAM, 512GB SSD.",
+    "price": 999.99,
+    "image": "https://via.placeholder.com/300x200?text=Computadora"
+  },
+  {
+    "id": 2,
+    "name": "Tablet",
+    "description": "Tablet con pantalla de 10 pulgadas, 64GB de almacenamiento y batería de larga duración.",
+    "price": 299.99,
+    "image": "https://via.placeholder.com/300x200?text=Tablet"
+  },
+  {
+    "id": 3,
+    "name": "Auriculares",
+    "description": "Auriculares inalámbricos con cancelación de ruido activa y hasta 20 horas de batería.",
+    "price": 199.99,
+    "image": "https://via.placeholder.com/300x200?text=Auriculares"
+  }
+]
